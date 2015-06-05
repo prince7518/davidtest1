@@ -3,12 +3,12 @@
 int main()
 {
 	int ret;
-	printf("parant: %d\n", getpid());
+	printf("%s %d: parant: %d\n", __FUNCTION__, __LINE__, getpid());
 	
 	ret = fork();
 
 	if (ret == 0)	//child
-		printf("child pid: %d, ret: %d\n", getpid(), ret);
+		printf("%s %d: child pid: %d, ret: %d\n", __FUNCTION__, __LINE__, getpid(), ret);
 	else
-		printf("parant pid: %d, ret: %d\n", getpid(), ret);
+		printf("%s %d: parant pid: %d, ret: %d\n", __FUNCTION__, __LINE__, getpid(), ret);
 }
