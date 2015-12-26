@@ -1,0 +1,12 @@
+#x := foo
+#y := $(x) bar
+#x := later
+TOP=$(shell ls)
+x = foo
+y = $(x) bar
+x = later
+test1:
+	@echo "hi x:$x y:$y TOP:$(TOP)"
+all: test1
+	@echo "x=$x, y=$y"
+	@echo "$@" "$<"
