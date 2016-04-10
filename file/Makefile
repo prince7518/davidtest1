@@ -1,6 +1,6 @@
-targets = fopen fgets
+targets = fgets  fopen  setenv  stdout
 
 all: $(targets)
 
 clean:
-	rm $(targets)
+	rm -f $(targets)
