@@ -2,9 +2,9 @@
 
 int main()
 {
-	int pid;
+	int n;
 	printf("hello my pid is :%d\n", getpid());
 	
-	pid = fork();
-	printf("hi my pid is: %d, the fork() return: %d\n", getpid(), pid);
+	n = fork();
+	printf("hi my pid is: %d, the fork() return: %d\n", getpid(), n);
 }
