@@ -1,7 +1,7 @@
-TARGET=fork1 fork2 exec1 exec1 exec1_1 execl_cp exec3_fork waitpid fork_copy_tar argv system
+SUBDIR=1fork 2execxx 3exec_to_cp 4waitpid 5fork_exec 6system
 
-all: $(TARGET)
-
+all:
+	for i in $(SUBDIR);do make -C $$i ;done
 clean:
-	-rm -f $(TARGET)
-	make -C execxx clean
+	for i in $(SUBDIR);do make -C $$i clean;done
+	
