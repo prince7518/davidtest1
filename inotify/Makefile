@@ -1,4 +1,4 @@
-targets=fork1 fork2 fork_var fork_copy_tar
+targets=inotify
 
 all: $(targets)
 

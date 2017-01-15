@@ -1,4 +1,4 @@
-SUBS=adv_io file fork gdb inotify make pipe signal socket c
+SUBS=pointer string var
 
 all:
 	for i in $(SUBS);do	\

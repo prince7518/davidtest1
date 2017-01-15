@@ -1,4 +1,4 @@
-targets=fork1 fork2 fork_var fork_copy_tar
+targets=v1 v2 v3
 
 all: $(targets)
 

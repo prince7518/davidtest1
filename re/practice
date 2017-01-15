@@ -1,0 +1,30 @@
+submit-url=/cgi-bin/luci/admin/gxbk/details/wifi/01&enabled_radio=true&ssid1=ELE_WIFI_1G&channelbound1=1&chan1=9&hiddenSSID1=0
+
+
+
+    Quickly generator and format POST data  from curl copied by chrome    
+     urldecode 'submit-url=%2Fcgi-bin%2Fluci%2Fadmin%2Fgxbk%2Fdetails%2Fwifi%2F02&choose_24ssid=0&method_elecom=2&length1=1&format_64=1&format_128=1&key1_show=&encryption1_elecom=0&pskValue1_show=1234567890'| \
+        sed -e 's/&/\n/g' -e "s/=/\':\'/g" | sed -e "s/^/\'/" -e "s/$/\',/"
+
+            'submit-url':'/cgi-bin/luci/admin/gxbk/details/wifi/02',
+            'choose_24ssid':'0',
+            'method_elecom':'2',
+            'length1':'1',
+            'format_64':'1',
+            'format_128':'1',
+            'key1_show':'',
+            'encryption1_elecom':'0',
+            'pskValue1_show':'1234567890',
+
+
+
+    post_data = {'submit-url':'/cgi-bin/luci/admin/gxbk/details/wifi/02',
+            'choose_24ssid':'0',
+            'method_elecom': method,
+            'length1':'1',
+            'format_64':'1',
+            'format_128':'1',
+            'key1_show':'',
+            'encryption1_elecom':'0',
+            'pskValue1_show':psk
+            }

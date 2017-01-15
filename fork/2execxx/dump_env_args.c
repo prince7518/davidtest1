@@ -9,7 +9,11 @@ int main(int argc, char *argv[])
 
 	for (n = 0; n < argc; n++) {
 		printf("argv[%d]: %s\n", n, argv[n]);
+		//printf("argv[%d]: %s\n", n, *(argv + n));
+		//printf("argv[%d]: %s\n", n, *argv++);
 	}
-	for (e = environ; *e != NULL; e++)
+	for (e = environ; *e != NULL; e++) {
 		printf("%s\n", *e);
+		//printf("%p\n", e);
+	}
 }
