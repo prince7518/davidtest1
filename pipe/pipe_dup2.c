@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 
 	pipe(pipefd);
 	pid = fork();
-	if (pid == 0) {
+	if (pid > 0) {
 		dup2(pipefd[0], 0);
 		close(pipefd[1]);
 		execvp("grep", grep_args);
