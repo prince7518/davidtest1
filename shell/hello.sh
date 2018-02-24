@@ -1,5 +1,7 @@
 #!/bin/sh
 
-NAME="hello peter"
-echo $NAME
-exit 2
+#NAME="hello peter"
+#echo $NAME
+cd ..
+
+#exit 2

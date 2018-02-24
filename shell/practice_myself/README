@@ -1,0 +1,1 @@
+sed -e s/[d,D][a,A][v,V][i,I][d,D]/jack/g practice_sed.sh

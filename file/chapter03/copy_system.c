@@ -4,13 +4,13 @@
 
 int main()
 {
-    char c; 
-    int in, out;
+    char buff[1024]; 
+    int i,in, out;
 
     in = open("file.in", O_RDONLY); 
     out = open("file.out", O_WRONLY|O_CREAT, S_IRUSR|S_IWUSR);
-    while(read(in,&c,1) == 1)
-        write(out,&c,1);
+    while(i=read(in,buff,sizeof(buff)) > 0)
+        write(out,buff,i);
 
     exit(0);
 }
